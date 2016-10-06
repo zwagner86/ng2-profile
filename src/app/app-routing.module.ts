@@ -8,4 +8,4 @@ const routes: Routes = [];
   exports: [RouterModule],
   providers: []
 })
-export class NgLandingRoutingModule { }
+export class Ng2ProfileRoutingModule { }
