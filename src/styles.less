@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #46494C;
+  color: #ffffff;
+
+  .navbar {
+    border-radius: 0;
+    border: none;
+    background-color: #1985A1;
+    color: #ffffff;
+
+    .navbar-header {
+
+      .navbar-brand {
+        color: #ffffff;
+      }
+
+      .navbar-toggle {
+        border-color: #ffffff;
+
+        .icon-bar {
+          background-color: #ffffff;
+        }
+
+        &:hover, &:focus {
+          border-color: #ffffff;
+          background-color: #ffffff;
+
+          .icon-bar {
+            background-color: #1985A1;
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      border-color: #ffffff;
+
+      .navbar-nav {
+        a {
+          color: #ffffff;
+        }
+
+        .active {
+          a {
+            color: #ffffff;
+            background-color: #1a7f99;
+
+            &:hover, &:focus {
+              color: #ffffff;
+              background-color: #166e84;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    background: #4C5C68;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    p {
+      margin: 20px 0;
+    }
+  }
+}
