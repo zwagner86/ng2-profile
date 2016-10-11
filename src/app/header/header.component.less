@@ -1,17 +1,33 @@
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+
 .navbar {
   border-radius: 0;
   border: none;
   background-color: #1985A1;
   color: #ffffff;
+  min-height: 80px;
+  height: 80px;
 
   .navbar-header {
 
     .navbar-brand {
       color: #ffffff;
+      height: 80px;
+      width: 80px;
+      padding: 7px;
+
+      img {
+        width: 66px;
+        border: 3px solid #ffffff;
+        border-radius: 50%;
+      }
     }
 
     .navbar-toggle {
       border-color: #ffffff;
+      margin-top: 23px;
+      margin-bottom: 23px;
 
       .icon-bar {
         background-color: #ffffff;
@@ -30,10 +46,22 @@
 
   .navbar-collapse {
     border-color: #ffffff;
+    position: relative;
+    z-index: 501;
 
     .navbar-nav {
+      margin-top: 0;
+
       a {
         color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @media (min-width: @screen-sm-min) {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+
       }
 
       .active {

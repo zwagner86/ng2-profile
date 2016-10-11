@@ -1,0 +1,30 @@
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+
+.profile {
+  position: relative;
+  z-index: 500;
+
+  .profile-pic-container {
+    float: none;
+    text-align: center;
+
+    @media (min-width: @screen-sm-min) {
+      float: right;
+    }
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .info-container {
+    float: none;
+    text-align: center;
+
+    @media (min-width: @screen-sm-min) {
+      float: left;
+    }
+  }
+
+}
