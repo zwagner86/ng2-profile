@@ -11,6 +11,30 @@
 
   .navbar-header {
 
+    .social-icons-mobile {
+      display: block;
+      padding-left: 50%;
+      margin-left: -55px;
+
+      a {
+        img {
+          width: 50px;
+          margin: 15px 5px;
+          &.linkedin {
+            margin-left: 0;
+          }
+          &.github {
+            margin-right: 0;
+          }
+        }
+      }
+
+      @media (min-width: @screen-sm-min) {
+        display: none;
+      }
+
+    }
+
     .navbar-brand {
       color: #ffffff;
       height: 80px;
@@ -48,6 +72,28 @@
     border-color: #ffffff;
     position: relative;
     z-index: 501;
+
+    .social-icons {
+      display: none;
+
+      @media (min-width: @screen-sm-min) {
+        display: block;
+        text-align: right;
+        a {
+          img {
+            width: 50px;
+            margin: 15px 5px;
+            &.linkedin {
+              margin-left: 0;
+            }
+            &.github {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+    }
 
     .navbar-nav {
       margin-top: 0;
