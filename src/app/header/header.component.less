@@ -51,15 +51,25 @@
 
     .navbar-nav {
       margin-top: 0;
+      background-color: #1985A1;
 
       a {
         color: #ffffff;
         padding-top: 10px;
         padding-bottom: 10px;
 
+        &:hover, &:focus {
+          color: #ffffff;
+          background-color: #166e84;
+        }
+
         @media (min-width: @screen-sm-min) {
           padding-top: 30px;
           padding-bottom: 30px;
+        }
+
+        i {
+          padding-right: 10px;
         }
 
       }
