@@ -4,8 +4,26 @@
   width: 100%;
   bottom: 0;
 
-  p {
+  .copyright {
     margin: 20px 0;
-    text-align: center;
+    display: inline-block;
+    float: left;
+  }
+
+  .social-icons {
+    display: inline-block;
+    float: right;
+    a {
+      img {
+        width: 40px;
+        margin: 10px 5px;
+        &.linkedin {
+          margin-left: 5px;
+        }
+        &.github {
+          margin-right: 0;
+        }
+      }
+    }
   }
 }
