@@ -31,30 +31,34 @@
           <div class="description">{{whatDescription}}</div>
           <div class="sub-info-container">
             <div class="sub-info-desc">Here are some languages I have experience with:</div>
-            <div class="skill" *ngFor="let language of languages">
-              <div class="skill-label">
-                <div class="skill-text">
-                  {{ language.name }} <i class="glyphicon glyphicon-star" *ngIf="language.star"></i>
+            <div class="skills-list">
+              <div class="skill" *ngFor="let language of languages">
+                <div class="skill-label">
+                  <div class="skill-text">
+                    {{ language.name }} <i class="glyphicon glyphicon-star" *ngIf="language.star"></i>
+                  </div>
                 </div>
-              </div>
-              <div class="image-block">
-                <div class="image-cell">
-                  <img src="{{language.logoPath}}" />
+                <div class="image-block">
+                  <div class="image-cell">
+                    <img src="{{language.logoPath}}" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="sub-info-container">
             <div class="sub-info-desc">And here are some frameworks, libraries, and tools I've used:</div>
-            <div class="skill" *ngFor="let framework of frameworks">
-              <div class="skill-label">
-                <div class="skill-text">
-                  {{ framework.name }} <i class="glyphicon glyphicon-star" *ngIf="framework.star"></i>
+            <div class="skills-list">
+              <div class="skill" *ngFor="let framework of frameworks">
+                <div class="skill-label">
+                  <div class="skill-text">
+                    {{ framework.name }} <i class="glyphicon glyphicon-star" *ngIf="framework.star"></i>
+                  </div>
                 </div>
-              </div>
-              <div class="image-block">
-                <div class="image-cell">
-                  <img src="{{framework.logoPath}}" />
+                <div class="image-block">
+                  <div class="image-cell">
+                    <img src="{{framework.logoPath}}" />
+                  </div>
                 </div>
               </div>
             </div>
