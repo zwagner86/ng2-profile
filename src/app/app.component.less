@@ -63,6 +63,27 @@
           }
         }
 
+        .resume-link {
+          display: none;
+
+          @media (min-width: 1000px) {
+            display: block;
+            padding-top: 15px;
+
+            .resume-btn {
+              width: 175px;
+              background-color: #ffffff;
+              border-color: #35a7ff;
+              border-radius: 0;
+              color: #35a7ff;
+
+              &:hover, &:focus {
+                background-color: #d8d9d9;
+              }
+            }
+          }
+        }
+
       }
     }
 
