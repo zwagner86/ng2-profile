@@ -1,0 +1,39 @@
+<div class="col-xs-12 col-sm-6 skill-info">
+  <div class="skill-info-inner">
+    <div class="info-container">
+      <div class="info-header">WHO?</div>
+      <div class="info">
+        <div class="description">
+          Hey, what's up?  My full name is <span class="highlighted">Zachary</span> but you can call me <span class="highlighted">Zach</span>.  I am a <span class="highlighted">Senior Software Engineer</span> with <span class="highlighted">full-stack experience</span>, but a passion for working in the <span class="highlighted">front-end</span>.  For example, I made this page so I could play around with <span class="highlighted">Angular2</span> and <span class="highlighted">TypeScript</span>!
+        </div>
+      </div>
+    </div>
+    <div class="info-container">
+      <div class="info-header">WHAT?</div>
+      <div class="info">
+        <div class="description">{{whatDescription}}</div>
+        <div class="sub-info-container">
+          <div class="sub-info-desc">Here are some languages I have experience with:</div>
+          <div class="skills-list">
+            <app-skill-tile [tile]="language" *ngFor="let language of languages" ></app-skill-tile>
+          </div>
+        </div>
+        <div class="sub-info-container">
+          <div class="sub-info-desc">And here are some frameworks, libraries, and tools I've used:</div>
+          <div class="skills-list">
+            <app-skill-tile [tile]="framework" *ngFor="let framework of frameworks" ></app-skill-tile>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info-container">
+      <div class="info-header">WHERE?</div>
+      <div class="info">
+        <div><a href="https://www.slalom.com/locations/chicago" target="_blank">Slalom Consulting</a></div>
+        <div>December 2012 - Present</div>
+        <div>Chicago, IL</div>
+        <div>Senior Software Engineer</div>
+      </div>
+    </div>
+  </div>
+</div>
